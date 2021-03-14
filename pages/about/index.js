@@ -1,5 +1,19 @@
-// This page available at the route: http://localhost:3000/about ! //
+import Link from 'next/link';
+import Router from 'next/router';
 
 export default function About() {
-  return <h2>About page</h2>;
+  const clickHandler = () => {
+    Router.push('/');
+  };
+
+  return (
+    <>
+      <h2>About page</h2>
+      <Link href="/">
+        <button>Back home by Link</button>
+      </Link>
+      <br />
+      <button onClick={clickHandler}>Back home by Router</button>
+    </>
+  );
 }
