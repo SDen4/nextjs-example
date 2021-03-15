@@ -1,10 +1,30 @@
+import Link from 'next/link';
+
 export function MainLayout({ children }) {
   return (
     <>
       <nav>
-        <h2>Navigation temp</h2>
+        <Link href="/">
+          <a>Home</a>
+        </Link>
+        <Link href="/about">
+          <a>About</a>
+        </Link>
+        <Link href="/about/author">
+          <a>Athor</a>
+        </Link>
       </nav>
       <main>{children}</main>
+      <style jsx>{`
+        nav {
+          display: flex;
+        }
+        a {
+          margin-right: 15px;
+          text-decoration: none;
+          color: orange;
+        }
+      `}</style>
     </>
   );
 }
