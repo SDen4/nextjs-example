@@ -15,7 +15,7 @@ export function MainLayout({ children }) {
         </Link>
       </nav>
       <main>{children}</main>
-      <style jsx>{`
+      <style jsx global>{`
         nav {
           display: flex;
         }
