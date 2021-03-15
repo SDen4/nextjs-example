@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import Head from 'next/head';
+import { MainLayout } from '../components/MainLayout';
 
 export default function Index() {
   return (
-    <>
+    <MainLayout>
       <Head>
         <title>Next_course</title>
         <meta name="keywords" content="next.js, js" />
@@ -19,6 +20,6 @@ export default function Index() {
       <Link href={'/about/author'}>
         <a>author</a>
       </Link>
-    </>
+    </MainLayout>
   );
 }
