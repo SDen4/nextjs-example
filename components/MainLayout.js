@@ -1,8 +1,15 @@
+import Head from 'next/head';
 import Link from 'next/link';
 
-export function MainLayout({ children }) {
+export function MainLayout({ children, title = 'Next_course' }) {
   return (
     <>
+      <Head>
+        <title>{title} page</title>
+        <meta name="keywords" content="next.js, js" />
+        <meta name="description" content="this is nextjs_course" />
+        <meta charSet="utf-8" />
+      </Head>
       <nav>
         <Link href="/">
           <a>Home</a>
@@ -15,7 +22,7 @@ export function MainLayout({ children }) {
         </Link>
       </nav>
       <main>{children}</main>
-      <style jsx global>{`
+      <style jsx>{`
         nav {
           display: flex;
         }

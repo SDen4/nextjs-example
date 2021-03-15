@@ -4,7 +4,7 @@ import { MainLayout } from '../../components/MainLayout';
 
 export default function Author() {
   return (
-    <MainLayout>
+    <MainLayout title={'Author'}>
       <h2>Author page</h2>
       <p>Text Text Text Text Text Text Text Text Text Text Text Text </p>
     </MainLayout>

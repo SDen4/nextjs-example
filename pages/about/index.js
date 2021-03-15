@@ -8,7 +8,7 @@ export default function About() {
   };
 
   return (
-    <MainLayout>
+    <MainLayout title={'About'}>
       <h2>About page</h2>
       <Link href="/">
         <button>Back home by Link</button>
